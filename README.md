@@ -1,17 +1,16 @@
-Here’s a clean starting **README.md** you can drop into your repo and expand later:
-
-````markdown
-# Excalidraw-Lite (Go + WebSockets)
+# CollaBoard
+> Excalidraw-Lite (Go + WebSockets)
 
 A minimal collaborative whiteboard built with **Go** (backend) and **HTML/CSS/JavaScript** (frontend).  
+
 Users can create a room via a shareable URL and draw together in real-time with undo/redo support.
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Backend**: Go  
-  - WebSocket server (`gorilla/websocket` or `nhooyr.io/websocket`)  
+  - WebSocket server (`gorilla/websocket`
   - In-memory room manager + stack-based undo/redo  
 
 - **Frontend**: Vanilla HTML/CSS/JS  
@@ -19,17 +18,14 @@ Users can create a room via a shareable URL and draw together in real-time with 
   - WebSocket client for live collaboration  
   - Toolbar: select shape, undo, redo  
 
----
-
 ## 🎯 MVP Features
 
 - Create a unique room with a shareable URL  
 - Connect multiple clients to the same room via WebSockets  
-- Draw basic shapes (freehand lines, rectangles, circles)  
-- Stack-based undo/redo (per room, synced across all users)  
-- Real-time collaboration (every action is broadcast to all participants)  
-
----
+- Draw basic shapes (freehand lines, rectangles, circles)
+- Draw text  
+- Stack-based undo/redo (per room, synced across all users)
+- Real-time collaboration (every action is broadcast to all participants)
 
 ## 🔄 Data Flow
 
@@ -51,7 +47,7 @@ Users can create a room via a shareable URL and draw together in real-time with 
     "to": [50, 100],
     "color": "#000"
   }
-````
+  ```
 
 * Action sent to backend → appended to `room.Actions` → broadcast to all clients
 
@@ -66,21 +62,7 @@ Users can create a room via a shareable URL and draw together in real-time with 
 ## 🛠️ Future Enhancements
 
 * User cursors with identifiers
-* Export board to PNG/SVG
-* Persistent storage (database)
+* Export board to PNG/PDF
 * Room expiration after inactivity
 * Authentication for private boards
-
----
-
-## 📸 Demo
-
-*TODO: Add screenshots/gifs once MVP is working*
-
-```
-
----
-
-Do you want me to also write a **section on how to run it locally** (Go + static frontend), or keep it lightweight since it’s just for your portfolio?
-```
 
