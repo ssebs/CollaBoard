@@ -5,6 +5,11 @@ A minimal collaborative whiteboard built with **Go** (backend) and **HTML/CSS/Ja
 
 Users can create a room via a shareable URL and draw together in real-time with undo/redo support.
 
+## TODO / Planning
+See [TODO.md](./TODO.md)
+
+> The rest of this page is the general idea of the project.
+
 ---
 
 ## Tech Stack
