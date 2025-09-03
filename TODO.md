@@ -10,8 +10,6 @@
     Continue building on this and read more into it.
     ```
 
-- Serve static frontend
-
 - Create `/api/test` endpoint
 
 ## Planning

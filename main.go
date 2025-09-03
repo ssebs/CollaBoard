@@ -46,7 +46,7 @@ func main() {
 	log.SetFlags(0)
 
 	http.HandleFunc("/echo", echo)
-	http.HandleFunc("/", home)
+	http.Handle("/", http.FileServer(http.Dir("./html")))
 
 	fmt.Println("CollaBoard\nListening on http://" + *addr + "/")
 	log.Fatal(http.ListenAndServe(*addr, nil))
